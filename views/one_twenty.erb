@@ -11,10 +11,10 @@
   <h1>1d20</h1>
   <% if @dice ==1 %>
     <p style="color: red"><%= @outcome%></p>
-  <%elsif @die == 20 %>
+  <%elsif @dice == 20 %>
     <p style="color: green"><%= @outcome%></p>
   <%else%>
-    <p><% @outcome%></p>
+    <p><%= @outcome%></p>
   <%end%>
 
 

@@ -38,6 +38,19 @@ get ("/dice/1/20") do
   erb(:one_twenty)
 end  
 
+get ("/dice/100/6") do
+  @rolls = []
+  100.times do
+    die = rand(1..6)
+    @rolls.push(die)
+  end
+
+  # @outcome = "You rolled a #{@dice}"
+
+  erb(:one_hundred_six)
+end
+
+
 get("/") do
   erb(:elephant)
 end
